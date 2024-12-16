@@ -1,3 +1,8 @@
+/**
+ * @file
+ * 把 Less 文件编译成 CSS 文件
+ * 将 Less 文件以组件固定的目录格式一一对应编译到 dist 目录里
+ */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/ban-types */

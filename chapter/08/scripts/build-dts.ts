@@ -1,3 +1,11 @@
+/**
+ * @file
+ * 编译出所有 JavaScript 文件的 TypeScript 类型描述文件。
+ * 基于两个环节进行操作的。
+ * 第一个环节是基于 vue/compiler-sfc 的 Vue.js 3.x 编译器，将 Vue.js 源码编译成 TypeScript 代码；
+ * 第二环节是结合原有其它 TypeScript 代码文件，进行 TypeScript 的类型文件生成。
+ */
+
 /* eslint-disable no-console */
 import process from 'node:process';
 import path from 'node:path';

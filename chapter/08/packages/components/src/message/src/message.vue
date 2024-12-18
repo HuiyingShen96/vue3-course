@@ -1,5 +1,5 @@
 <template>
-  <div v-if="show">
+  <div v-if="show" :class="{ [baseClassName]: true, [typeClassName]: true }">
     <div>{{ props.text }}</div>
   </div>
 </template>
@@ -7,6 +7,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
 import { IMessageType } from './type';
+import { prefixName } from '../../theme/index';
 
 const show = ref<boolean>(false);
 
@@ -33,4 +34,7 @@ defineExpose<{
 }>({
   closeMessage: closeMessage
 });
+
+const baseClassName = `${prefixName}-message`;
+const typeClassName = `${baseClassName}-${props.type}`;
 </script>

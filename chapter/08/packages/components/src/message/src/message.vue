@@ -1,7 +1,9 @@
 <template>
-  <div v-if="show" :class="{ [baseClassName]: true, [typeClassName]: true }">
-    <div>{{ props.text }}</div>
-  </div>
+  <Transition :name="fadeClassName">
+    <div v-if="show" :class="{ [baseClassName]: true, [typeClassName]: true }">
+      <div>{{ props.text }}</div>
+    </div>
+  </Transition>
 </template>
 
 <script lang="ts" setup>
@@ -37,4 +39,5 @@ defineExpose<{
 
 const baseClassName = `${prefixName}-message`;
 const typeClassName = `${baseClassName}-${props.type}`;
+const fadeClassName = `${baseClassName}-fade`;
 </script>

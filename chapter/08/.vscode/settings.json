@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "eslint.format.enable": true,
   "prettier.configPath": ".prettierrc.json",
   "[typescript]": {
@@ -10,5 +10,6 @@
   },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "commentTranslate.targetLanguage": "zh-CN"
 }

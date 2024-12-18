@@ -3,11 +3,12 @@
     <div :style="{ padding: '10px' }">这是开发模式下的 基础组件</div>
     <Button @click="onClick">点击换主题色</Button>
     <Button @click="showMessage">Message</Button>
+    <Button @click="showDialog">Dialog</Button>
   </Box>
 </template>
 
 <script setup lang="ts">
-import { Button, Box, Message } from './src';
+import { Button, Box, Message, Dialog } from './src';
 import { prefixName } from './src/theme/index';
 
 const onClick = () => {
@@ -26,6 +27,14 @@ const showMessage = () => {
     duration: 0
   });
 }
+const showDialog = () => {
+  const dialog = Dialog.createDialog({
+    text: 'I am a dialog.',
+    onOk() {
+      dialog.close();
+    }
+  })
+};
 </script>
 
 <style>

@@ -28,7 +28,7 @@ npm run dev:business
 npm run build
 ```
 
-## 学习
+## 项目搭建
 ### 目标
 1. 将组件库封装成 npm 模块
 2. 支持 ES Module 和 CommonJS 模块格式
@@ -122,3 +122,38 @@ npm run build
   ```
 - pnpm 内置了对单一存储库（也称为多包存储库、多项目存储库或单体存储库）的支持。
   > pnpm has built-in support for monorepositories (AKA multi-package repositories, multi-project repositories, or monolithic repositories). 
+
+
+
+## 组件
+
+### 动态组件
+
+Vue.js 3.x 动态渲染组件本质就是渲染一个独立的 Vue.js 3.x 的应用。
+
+例子：Message / Dialog
+
+### 布局组件
+
+栅格化布局组件 & 语义化布局组件
+
+例子：Row / Col / Header / Content / Sider / Footer
+
+### 受控表单组件
+
+例子：Form / FormItem
+
+受控组件与非受控组件（这个技术概念的主要应用场景是表单场景）：
+
+- 受控组件：通过**内置统一状态或者数据管理**来控制表单操作。优点：容易使用、容易扩展、方便实现逻辑复用。
+- 非受控组件：使用原生 HTML 的表单特性来实现表单操作。
+
+#### 表单组件设计需要考虑什么？
+
+- 数据共享：
+  - props 和 emits
+  - provide 和 inject
+- 数据校验
+
+
+

@@ -4,6 +4,8 @@ import Message from './message';
 import Dialog from './dialog';
 import Row from './row';
 import Col from './col';
+import Form from './form';
+import type { FormInstance, ValidateRule } from './form';
 
 export {
   Button,
@@ -12,4 +14,9 @@ export {
   Dialog,
   Row,
   Col,
+  Form,
 };
+export type {
+  FormInstance,
+  ValidateRule,
+}

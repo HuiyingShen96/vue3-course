@@ -60,8 +60,8 @@
 <script setup lang="ts">
 import { Button, Box, Message, Dialog,
   Col, Row,
- } from './src';
-import { prefixName } from './src/theme/index';
+ } from '../src';
+import { prefixName } from '../src/theme/index';
 
 const onClick = () => {
   const darkThemeName = `${prefixName}-theme-dark`;
